@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weapons Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Weapons Data</h2>
+    <div id="filters">
+        <div class="filter-group">
+            <h3>Stats</h3>
+            <div class="scrollable-list" id="stat-checkboxes">
+                <!-- Stats checkboxes will be populated here by weapon.js -->
+            </div>
+        </div>
+        <div class="filter-group">
+            <h3>Weapon Types</h3>
+            <div id="weapon-type-checkboxes">
+                <!-- Weapon types checkboxes will be populated here by weapon.js -->
+            </div>
+        </div>
+        <div class="filter-group">
+            <h3>Weapon Tiers</h3>
+            <div id="weapon-tier-checkboxes">
+                <!-- Weapon tiers checkboxes will be populated here by weapon.js -->
+            </div>
+        </div>
+        <div class="filter-group">
+            <h3>Weapon Rounds Types</h3>
+            <div id="weapon-rounds-checkboxes">
+                <!-- Weapon rounds types checkboxes will be populated here by weapon.js -->
+            </div>
+        </div>
+        <div class="filter-group">
+            <h3>Set Weapon Level</h3>
+            <input type="number" id="weapon-level" min="1" max="100" value="100">
+        </div>
+    </div>
+    <table id="weaponTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0, false)">Weapon Name</th>
+                <th onclick="sortTable(1, false)">Weapon Type</th>
+                <th onclick="sortTable(2, false)">Weapon Tier</th>
+                <th onclick="sortTable(3, false)">Weapon Rounds Type</th>
+                <!-- Stat columns will be populated here by weapon.js -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Weapon data will be populated here by weapon.js -->
+        </tbody>
+    </table>
+    <script src="weapon.js"></script>
+</body>
+</html>

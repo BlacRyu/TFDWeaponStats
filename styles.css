@@ -1,0 +1,64 @@
+body {
+    background-color: #2e3b4e;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+#filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    background-color: #404b5b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filter-box {
+    display: inline-block;
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.scrollable-list {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.scrollable-list label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ecf0f1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #3d556e;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+    background-color: #555;
+}
